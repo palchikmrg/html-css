@@ -362,10 +362,75 @@
 
   [type='checkbox'] {
     margin: 10px 0px 15px 0px;
- }
- 
+ } 
 
+
+ <!-- 24 - Understand Absolute versus Relative Units -->
+
+ .red-box {
+    background-color: red;
+    margin: 20px 40px 20px 40px;
+    padding:1.5em;
+  }
+
+
+  <!-- 25 - Style the HTML Body Element -->
+
+    <style>
+    body {
+      background-color: black;
+    }
+    </style>
+
+
+<!-- 26 - Inherit Styles from the Body Element -->
+
+<style>
+    body {
+      background-color: black;
+      color: green;
+      font-family: monospace;
+    }
   
+  </style>
+  <h1>Hello World</h1>
+
+
+  <!-- 27 - Prioritize One Style Over Another -->
+
+  <style>
+    body {
+      background-color: black;
+      font-family: monospace;
+      color: green;
+    }
+      .pink-text{
+        color: pink;
+      }
+  </style>
+  <h1 class="pink-text">Hello World!</h1>
+
+
+<!-- 28 - Override Styles in Subsequent CSS -->
+  <style>
+    body {
+      background-color: black;
+      font-family: monospace;
+      color: green;
+    }
+    .pink-text {
+      color: pink;
+    }
+    .blue-text {
+      color: blue;
+    }
+  </style>
+  <h1 class="pink-text blue-text">Hello World!</h1>
+
+
+  <!-- 29 Override Class Declarations by Styling ID Attributes -->
+
+
 
 
 
